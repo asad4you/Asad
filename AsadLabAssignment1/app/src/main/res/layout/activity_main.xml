@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+
+    <TextView
+        android:id="@+id/oncreate"
+        android:text="OnCreate() calls:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/oncreateCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/oncreate"
+        />
+
+    <TextView
+        android:id="@+id/onstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnStart() calls:"
+        android:layout_below="@+id/oncreate"/>
+
+    <TextView
+        android:id="@+id/onstartCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onstart"
+        android:layout_below="@+id/oncreateCount"
+        />
+
+    <TextView
+        android:id="@+id/onresume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnResume() calls:"
+        android:layout_below="@+id/onstartCount"/>
+
+    <TextView
+        android:id="@+id/onresumeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onresume"
+        android:layout_below="@+id/onstartCount"
+        />
+
+    <TextView
+        android:id="@+id/onrestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnRestart() calls:"
+        android:layout_below="@+id/onresume"/>
+
+    <TextView
+        android:id="@+id/onrestartCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onrestart"
+        android:layout_below="@+id/onresumeCount"
+        />
+
+    <Button
+        android:id="@+id/shift_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Second Activity"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="#03A9F4"/>
+
+</RelativeLayout>

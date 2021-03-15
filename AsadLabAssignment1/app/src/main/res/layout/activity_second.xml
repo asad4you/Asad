@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+        android:id="@+id/oncreateSecondActivity"
+        android:text="OnCreate() "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/oncreateCountSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/oncreateSecondActivity"
+        />
+
+    <TextView
+        android:id="@+id/onstartSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnStart() :"
+        android:layout_below="@+id/oncreateSecondActivity"/>
+
+    <TextView
+        android:id="@+id/onstartCountSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onstartSecondActivity"
+        android:layout_below="@+id/oncreateCountSecondActivity"
+        />
+
+    <TextView
+        android:id="@+id/onresumeSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnResume() :"
+        android:layout_below="@+id/onstartCountSecondActivity"/>
+
+    <TextView
+        android:id="@+id/onresumeCountSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onresumeSecondActivity"
+        android:layout_below="@+id/onstartCountSecondActivity"
+        />
+
+    <TextView
+        android:id="@+id/onrestartSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnRestart() :"
+        android:layout_below="@+id/onresumeSecondActivity"/>
+
+    <TextView
+        android:id="@+id/onrestartCountSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onrestartSecondActivity"
+        android:layout_below="@+id/onresumeCountSecondActivity"
+        />
+
+    <Button
+        android:id="@+id/shift_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="First Activity"
+        app:backgroundTint="#03A9F4" />
+
+</RelativeLayout>
