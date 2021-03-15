@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvValueOne"
+        android:text="Value One: "
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etValueOne"
+        android:layout_toRightOf="@+id/tvValueOne"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvValueTwo"
+        android:text="Value Two: "
+        android:layout_below="@+id/tvValueOne"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etValueTwo"
+        android:layout_below="@+id/etValueOne"
+        android:layout_toRightOf="@+id/tvValueTwo"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:id="@+id/spOptions"
+        android:layout_below="@id/etValueTwo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:id="@+id/tvResult"
+        android:layout_below="@+id/spOptions"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/btnCalculate"
+        android:layout_below="@id/tvResult"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
